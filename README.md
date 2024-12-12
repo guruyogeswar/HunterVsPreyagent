@@ -44,6 +44,13 @@ The game initializes agents at random positions and encourages diverse interacti
   - Epochs: 5
   - Maximum Steps: 5,000,000
 
+## Training Video
+
+
+https://github.com/user-attachments/assets/964d2c39-d48a-4671-87e5-c08812709144
+
+
+
 ## Results and Observations
 
 - The **Hunter** consistently performed better due to a simpler task and refined strategy.
