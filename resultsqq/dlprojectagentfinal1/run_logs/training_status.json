@@ -1,0 +1,29 @@
+{
+    "Agent Contoller": {
+        "checkpoints": [
+            {
+                "steps": 7680,
+                "file_path": "results\\dlprojectagentfinal1\\Agent Contoller\\Agent Contoller-7680.onnx",
+                "reward": null,
+                "creation_time": 1713770103.009716,
+                "auxillary_file_paths": [
+                    "results\\dlprojectagentfinal1\\Agent Contoller\\Agent Contoller-7680.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 7680,
+            "file_path": "results\\dlprojectagentfinal1\\Agent Contoller.onnx",
+            "reward": null,
+            "creation_time": 1713770103.009716,
+            "auxillary_file_paths": [
+                "results\\dlprojectagentfinal1\\Agent Contoller\\Agent Contoller-7680.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.1.2+cpu"
+    }
+}

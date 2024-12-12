@@ -1,0 +1,29 @@
+{
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.1.2+cpu"
+    },
+    "agent": {
+        "checkpoints": [
+            {
+                "steps": 0,
+                "file_path": "results\\multi1\\agent\\agent-0.onnx",
+                "reward": null,
+                "creation_time": 1704724948.4963236,
+                "auxillary_file_paths": [
+                    "results\\multi1\\agent\\agent-0.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 0,
+            "file_path": "results\\multi1\\agent.onnx",
+            "reward": null,
+            "creation_time": 1704724948.4963236,
+            "auxillary_file_paths": [
+                "results\\multi1\\agent\\agent-0.pt"
+            ]
+        }
+    }
+}

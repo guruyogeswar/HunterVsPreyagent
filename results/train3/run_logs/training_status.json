@@ -1,0 +1,87 @@
+{
+    "Hunter controller": {
+        "checkpoints": [
+            {
+                "steps": 448,
+                "file_path": "results\\train3\\Hunter controller\\Hunter controller-448.onnx",
+                "reward": null,
+                "creation_time": 1733908241.8645458,
+                "auxillary_file_paths": [
+                    "results\\train3\\Hunter controller\\Hunter controller-448.pt"
+                ]
+            },
+            {
+                "steps": 15673,
+                "file_path": "results\\train3\\Hunter controller\\Hunter controller-15673.onnx",
+                "reward": 1.2370823632787775,
+                "creation_time": 1733909556.6794033,
+                "auxillary_file_paths": [
+                    "results\\train3\\Hunter controller\\Hunter controller-15673.pt"
+                ]
+            },
+            {
+                "steps": 452880,
+                "file_path": "results\\train3\\Hunter controller\\Hunter controller-452880.onnx",
+                "reward": 14.00370336137712,
+                "creation_time": 1733910609.9295807,
+                "auxillary_file_paths": [
+                    "results\\train3\\Hunter controller\\Hunter controller-452880.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 452880,
+            "file_path": "results\\train3\\Hunter controller.onnx",
+            "reward": 14.00370336137712,
+            "creation_time": 1733910609.9295807,
+            "auxillary_file_paths": [
+                "results\\train3\\Hunter controller\\Hunter controller-452880.pt"
+            ]
+        }
+    },
+    "Agent Controller": {
+        "checkpoints": [
+            {
+                "steps": 448,
+                "file_path": "results\\train3\\Agent Controller\\Agent Controller-448.onnx",
+                "reward": null,
+                "creation_time": 1733908241.9194071,
+                "auxillary_file_paths": [
+                    "results\\train3\\Agent Controller\\Agent Controller-448.pt"
+                ]
+            },
+            {
+                "steps": 15673,
+                "file_path": "results\\train3\\Agent Controller\\Agent Controller-15673.onnx",
+                "reward": -5.454545454545454,
+                "creation_time": 1733909556.7322114,
+                "auxillary_file_paths": [
+                    "results\\train3\\Agent Controller\\Agent Controller-15673.pt"
+                ]
+            },
+            {
+                "steps": 452869,
+                "file_path": "results\\train3\\Agent Controller\\Agent Controller-452869.onnx",
+                "reward": 58.15217391304348,
+                "creation_time": 1733910609.8575296,
+                "auxillary_file_paths": [
+                    "results\\train3\\Agent Controller\\Agent Controller-452869.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 452869,
+            "file_path": "results\\train3\\Agent Controller.onnx",
+            "reward": 58.15217391304348,
+            "creation_time": 1733910609.8575296,
+            "auxillary_file_paths": [
+                "results\\train3\\Agent Controller\\Agent Controller-452869.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.1.2+cpu"
+    }
+}

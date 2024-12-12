@@ -1,0 +1,69 @@
+{
+    "Agent Controller": {
+        "checkpoints": [
+            {
+                "steps": 499955,
+                "file_path": "results\\train5\\Agent Controller\\Agent Controller-499955.onnx",
+                "reward": -2.2282608695652173,
+                "creation_time": 1733912427.7724118,
+                "auxillary_file_paths": [
+                    "results\\train5\\Agent Controller\\Agent Controller-499955.pt"
+                ]
+            },
+            {
+                "steps": 500078,
+                "file_path": "results\\train5\\Agent Controller\\Agent Controller-500078.onnx",
+                "reward": -2.3655913978494625,
+                "creation_time": 1733912427.9423616,
+                "auxillary_file_paths": [
+                    "results\\train5\\Agent Controller\\Agent Controller-500078.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500078,
+            "file_path": "results\\train5\\Agent Controller.onnx",
+            "reward": -2.3655913978494625,
+            "creation_time": 1733912427.9423616,
+            "auxillary_file_paths": [
+                "results\\train5\\Agent Controller\\Agent Controller-500078.pt"
+            ]
+        }
+    },
+    "Hunter controller": {
+        "checkpoints": [
+            {
+                "steps": 499963,
+                "file_path": "results\\train5\\Hunter controller\\Hunter controller-499963.onnx",
+                "reward": 12.159971759119566,
+                "creation_time": 1733912427.8988457,
+                "auxillary_file_paths": [
+                    "results\\train5\\Hunter controller\\Hunter controller-499963.pt"
+                ]
+            },
+            {
+                "steps": 500022,
+                "file_path": "results\\train5\\Hunter controller\\Hunter controller-500022.onnx",
+                "reward": 12.082436480726066,
+                "creation_time": 1733912428.0000522,
+                "auxillary_file_paths": [
+                    "results\\train5\\Hunter controller\\Hunter controller-500022.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500022,
+            "file_path": "results\\train5\\Hunter controller.onnx",
+            "reward": 12.082436480726066,
+            "creation_time": 1733912428.0000522,
+            "auxillary_file_paths": [
+                "results\\train5\\Hunter controller\\Hunter controller-500022.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.1.2+cpu"
+    }
+}

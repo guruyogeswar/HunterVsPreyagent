@@ -1,0 +1,54 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1713696058",
+        "python_version": "3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]",
+        "command_line_arguments": "D:\\unity projects\\My project (1)\\ml\\Scripts\\mlagents-learn config\\behaviors.yaml --run-id Huntervspreyrun1 --resume",
+        "mlagents_version": "0.30.0",
+        "mlagents_envs_version": "0.30.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.1.2+cpu",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1713696067"
+    },
+    "total": 9.2302555,
+    "count": 1,
+    "self": 0.0127309000000011,
+    "children": {
+        "run_training.setup": {
+            "total": 0.09798649999999975,
+            "count": 1,
+            "self": 0.09798649999999975
+        },
+        "TrainerController.start_learning": {
+            "total": 9.1195381,
+            "count": 1,
+            "self": 0.00014730000000007237,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 8.9120327,
+                    "count": 1,
+                    "self": 8.9120327
+                },
+                "trainer_threads": {
+                    "total": 7.000000010748408e-07,
+                    "count": 1,
+                    "self": 7.000000010748408e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 0.20735739999999936,
+                    "count": 1,
+                    "self": 0.015393599999997676,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.19196380000000168,
+                            "count": 2,
+                            "self": 0.19196380000000168
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "Agent Controller": {
+        "checkpoints": [
+            {
+                "steps": 100037,
+                "file_path": "results\\dlfinal1\\Agent Controller\\Agent Controller-100037.onnx",
+                "reward": 35.208333333333336,
+                "creation_time": 1713910229.2315109,
+                "auxillary_file_paths": [
+                    "results\\dlfinal1\\Agent Controller\\Agent Controller-100037.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 100037,
+            "file_path": "results\\dlfinal1\\Agent Controller.onnx",
+            "reward": 35.208333333333336,
+            "creation_time": 1713910229.2315109,
+            "auxillary_file_paths": [
+                "results\\dlfinal1\\Agent Controller\\Agent Controller-100037.pt"
+            ]
+        }
+    },
+    "Hunter controller": {
+        "checkpoints": [
+            {
+                "steps": 100025,
+                "file_path": "results\\dlfinal1\\Hunter controller\\Hunter controller-100025.onnx",
+                "reward": 13.958333333333334,
+                "creation_time": 1713910229.274206,
+                "auxillary_file_paths": [
+                    "results\\dlfinal1\\Hunter controller\\Hunter controller-100025.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 100025,
+            "file_path": "results\\dlfinal1\\Hunter controller.onnx",
+            "reward": 13.958333333333334,
+            "creation_time": 1713910229.274206,
+            "auxillary_file_paths": [
+                "results\\dlfinal1\\Hunter controller\\Hunter controller-100025.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.1.2+cpu"
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "agent": {
+        "checkpoints": [
+            {
+                "steps": 128,
+                "file_path": "results\\huntervsprey2\\agent\\agent-128.onnx",
+                "reward": null,
+                "creation_time": 1704725369.5094538,
+                "auxillary_file_paths": [
+                    "results\\huntervsprey2\\agent\\agent-128.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 128,
+            "file_path": "results\\huntervsprey2\\agent.onnx",
+            "reward": null,
+            "creation_time": 1704725369.5094538,
+            "auxillary_file_paths": [
+                "results\\huntervsprey2\\agent\\agent-128.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.1.2+cpu"
+    }
+}

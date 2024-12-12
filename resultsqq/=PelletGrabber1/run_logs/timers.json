@@ -1,0 +1,75 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1703744748",
+        "python_version": "3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]",
+        "command_line_arguments": "D:\\unity projects\\My project (1)\\ml\\Scripts\\mlagents-learn --run-id =PelletGrabber1 --force",
+        "mlagents_version": "0.30.0",
+        "mlagents_envs_version": "0.30.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.1.2+cpu",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1703744757"
+    },
+    "total": 9.3491731,
+    "count": 1,
+    "self": 0.005545099999999081,
+    "children": {
+        "run_training.setup": {
+            "total": 0.02203389999999983,
+            "count": 1,
+            "self": 0.02203389999999983
+        },
+        "TrainerController.start_learning": {
+            "total": 9.3215941,
+            "count": 1,
+            "self": 0.00017719999999776803,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 8.986111300000001,
+                    "count": 1,
+                    "self": 8.986111300000001
+                },
+                "TrainerController.advance": {
+                    "total": 0.3240116000000004,
+                    "count": 1,
+                    "self": 4.999999999810711e-06,
+                    "children": {
+                        "env_step": {
+                            "total": 0.3240066000000006,
+                            "count": 1,
+                            "self": 8.200000000080365e-05,
+                            "children": {
+                                "SubprocessEnvManager._take_step": {
+                                    "total": 0.3239245999999998,
+                                    "count": 1,
+                                    "self": 2.0100000000411455e-05,
+                                    "children": {
+                                        "TorchPolicy.evaluate": {
+                                            "total": 0.3239044999999994,
+                                            "count": 1,
+                                            "self": 0.3239044999999994
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "TrainerController._save_models": {
+                    "total": 0.011294000000001247,
+                    "count": 1,
+                    "self": 2.1100000001439412e-05,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.011272899999999808,
+                            "count": 1,
+                            "self": 0.011272899999999808
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

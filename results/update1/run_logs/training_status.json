@@ -1,0 +1,105 @@
+{
+    "Agent Controller": {
+        "checkpoints": [
+            {
+                "steps": 499971,
+                "file_path": "results\\update1\\Agent Controller\\Agent Controller-499971.onnx",
+                "reward": 8.974358974358974,
+                "creation_time": 1733933948.7326581,
+                "auxillary_file_paths": [
+                    "results\\update1\\Agent Controller\\Agent Controller-499971.pt"
+                ]
+            },
+            {
+                "steps": 999938,
+                "file_path": "results\\update1\\Agent Controller\\Agent Controller-999938.onnx",
+                "reward": 28.124624967575073,
+                "creation_time": 1733941945.8117728,
+                "auxillary_file_paths": [
+                    "results\\update1\\Agent Controller\\Agent Controller-999938.pt"
+                ]
+            },
+            {
+                "steps": 1499950,
+                "file_path": "results\\update1\\Agent Controller\\Agent Controller-1499950.onnx",
+                "reward": 22.10510529969868,
+                "creation_time": 1733949196.0709417,
+                "auxillary_file_paths": [
+                    "results\\update1\\Agent Controller\\Agent Controller-1499950.pt"
+                ]
+            },
+            {
+                "steps": 1594506,
+                "file_path": "results\\update1\\Agent Controller\\Agent Controller-1594506.onnx",
+                "reward": null,
+                "creation_time": 1733950844.170336,
+                "auxillary_file_paths": [
+                    "results\\update1\\Agent Controller\\Agent Controller-1594506.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1594506,
+            "file_path": "results\\update1\\Agent Controller.onnx",
+            "reward": null,
+            "creation_time": 1733950844.170336,
+            "auxillary_file_paths": [
+                "results\\update1\\Agent Controller\\Agent Controller-1594506.pt"
+            ]
+        }
+    },
+    "Hunter controller": {
+        "checkpoints": [
+            {
+                "steps": 499971,
+                "file_path": "results\\update1\\Hunter controller\\Hunter controller-499971.onnx",
+                "reward": 107.1622405174451,
+                "creation_time": 1733933948.7738261,
+                "auxillary_file_paths": [
+                    "results\\update1\\Hunter controller\\Hunter controller-499971.pt"
+                ]
+            },
+            {
+                "steps": 999983,
+                "file_path": "results\\update1\\Hunter controller\\Hunter controller-999983.onnx",
+                "reward": 123.40519799684223,
+                "creation_time": 1733941945.9732628,
+                "auxillary_file_paths": [
+                    "results\\update1\\Hunter controller\\Hunter controller-999983.pt"
+                ]
+            },
+            {
+                "steps": 1499950,
+                "file_path": "results\\update1\\Hunter controller\\Hunter controller-1499950.onnx",
+                "reward": 114.1330977730129,
+                "creation_time": 1733949196.125726,
+                "auxillary_file_paths": [
+                    "results\\update1\\Hunter controller\\Hunter controller-1499950.pt"
+                ]
+            },
+            {
+                "steps": 1594476,
+                "file_path": "results\\update1\\Hunter controller\\Hunter controller-1594476.onnx",
+                "reward": 168.62851534949408,
+                "creation_time": 1733950844.323622,
+                "auxillary_file_paths": [
+                    "results\\update1\\Hunter controller\\Hunter controller-1594476.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1594476,
+            "file_path": "results\\update1\\Hunter controller.onnx",
+            "reward": 168.62851534949408,
+            "creation_time": 1733950844.323622,
+            "auxillary_file_paths": [
+                "results\\update1\\Hunter controller\\Hunter controller-1594476.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.1.2+cpu"
+    }
+}

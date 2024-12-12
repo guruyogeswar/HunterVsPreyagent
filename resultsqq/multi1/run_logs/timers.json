@@ -1,0 +1,49 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1704724940",
+        "python_version": "3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]",
+        "command_line_arguments": "D:\\unity projects\\My project (1)\\ml\\Scripts\\mlagents-learn config\\behaviors.yaml --run-id multi1 --resume",
+        "mlagents_version": "0.30.0",
+        "mlagents_envs_version": "0.30.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.1.2+cpu",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1704724948"
+    },
+    "total": 8.1080668,
+    "count": 1,
+    "self": 0.007195000000001173,
+    "children": {
+        "run_training.setup": {
+            "total": 0.0747199999999999,
+            "count": 1,
+            "self": 0.0747199999999999
+        },
+        "TrainerController.start_learning": {
+            "total": 8.0261518,
+            "count": 1,
+            "self": 0.00010629999999878237,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 7.951207500000001,
+                    "count": 1,
+                    "self": 7.951207500000001
+                },
+                "TrainerController._save_models": {
+                    "total": 0.07483799999999974,
+                    "count": 1,
+                    "self": 0.005224799999998808,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.06961320000000093,
+                            "count": 1,
+                            "self": 0.06961320000000093
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

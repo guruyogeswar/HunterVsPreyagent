@@ -1,0 +1,51 @@
+{
+    "Hunter controller": {
+        "checkpoints": [
+            {
+                "steps": 3990,
+                "file_path": "results\\Huvspr\\Hunter controller\\Hunter controller-3990.onnx",
+                "reward": -6.0,
+                "creation_time": 1713695190.524642,
+                "auxillary_file_paths": [
+                    "results\\Huvspr\\Hunter controller\\Hunter controller-3990.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 3990,
+            "file_path": "results\\Huvspr\\Hunter controller.onnx",
+            "reward": -6.0,
+            "creation_time": 1713695190.524642,
+            "auxillary_file_paths": [
+                "results\\Huvspr\\Hunter controller\\Hunter controller-3990.pt"
+            ]
+        }
+    },
+    "Agent Controller": {
+        "checkpoints": [
+            {
+                "steps": 3990,
+                "file_path": "results\\Huvspr\\Agent Controller\\Agent Controller-3990.onnx",
+                "reward": -8.333333333333334,
+                "creation_time": 1713695190.5708225,
+                "auxillary_file_paths": [
+                    "results\\Huvspr\\Agent Controller\\Agent Controller-3990.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 3990,
+            "file_path": "results\\Huvspr\\Agent Controller.onnx",
+            "reward": -8.333333333333334,
+            "creation_time": 1713695190.5708225,
+            "auxillary_file_paths": [
+                "results\\Huvspr\\Agent Controller\\Agent Controller-3990.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.1.2+cpu"
+    }
+}
