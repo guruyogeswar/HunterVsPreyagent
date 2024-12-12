@@ -1,4 +1,3 @@
-// Updated HunterController
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,17 +25,13 @@ public class HunterController : Agent
 
     public override void OnEpisodeBegin()
     {
-        // Reset the hunter's position
         transform.localPosition = new Vector3(Random.Range(-4f, 4f), 0.3f, Random.Range(-4f, 4f));
 
-        // Reset agent's rotation
         transform.localRotation = Quaternion.Euler(0, Random.Range(0, 360), 0);
 
-        // Reset Rigidbody velocity
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
 
-        // Ensure a valid target position is available
         if (target != null)
         {
             previousDistanceToTarget = Vector3.Distance(transform.localPosition, target.localPosition);
@@ -45,10 +40,8 @@ public class HunterController : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        // Hunter's position
         sensor.AddObservation(transform.localPosition);
 
-        // Target relative position
         if (target != null)
         {
             Vector3 relativePosition = target.localPosition - transform.localPosition;
@@ -56,10 +49,9 @@ public class HunterController : Agent
         }
         else
         {
-            sensor.AddObservation(Vector3.zero); // Placeholder for missing target
+            sensor.AddObservation(Vector3.zero); 
         }
 
-        // Hunter's velocity
         sensor.AddObservation(rb.velocity);
     }
 
@@ -68,16 +60,13 @@ public class HunterController : Agent
         float moveRotate = actions.ContinuousActions[0];
         float moveForward = actions.ContinuousActions[1];
 
-        // Apply movement and rotation
         rb.MovePosition(transform.position + transform.forward * moveForward * moveSpeed * Time.deltaTime);
         transform.Rotate(0f, moveRotate * moveSpeed, 0f, Space.Self);
 
-        // Calculate distance to target
         if (target != null)
         {
             float currentDistanceToTarget = Vector3.Distance(transform.localPosition, target.localPosition);
 
-            // Reward for approaching the target
             if (currentDistanceToTarget < previousDistanceToTarget)
             {
                 AddReward(1f);
@@ -90,7 +79,6 @@ public class HunterController : Agent
             previousDistanceToTarget = currentDistanceToTarget;
         }
 
-        // Penalize idling behavior
         AddReward(-0.001f * Time.deltaTime);
     }
 

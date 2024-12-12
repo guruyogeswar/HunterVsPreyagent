@@ -1,4 +1,3 @@
-// Updated AgentController
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -33,17 +32,14 @@ public class AgentController : Agent
     public override void OnEpisodeBegin()
     {
         moveSpeed = 3.0f;
-        // Reset agent's position
+        
         transform.localPosition = new Vector3(Random.Range(-4f, 4f), 0.5f, Random.Range(-4f, 4f));
 
-        // Reset agent's rotation
         transform.localRotation = Quaternion.Euler(0, Random.Range(0, 360), 0);
 
-        // Reset Rigidbody velocity
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
 
-        // Remove and recreate food pellets
         RemovePellets();
         CreateTargets();
     }
@@ -61,7 +57,6 @@ public class AgentController : Agent
                 targetPosition = new Vector3(Random.Range(-4f, 4f), 0.3f, Random.Range(-4f, 4f));
                 validPosition = true;
 
-                // Check for overlap with existing targets
                 foreach (var existingTarget in spawnedTargets)
                 {
                     if (Vector3.Distance(targetPosition, existingTarget.transform.localPosition) < 0.5f)
@@ -74,7 +69,6 @@ public class AgentController : Agent
                 retryCounter++;
             } while (!validPosition && retryCounter < 10);
 
-            // Instantiate the food pellet if valid position is found
             if (validPosition)
             {
                 GameObject newTarget = Instantiate(foodPrefab, environmentLocation);
@@ -95,19 +89,15 @@ public class AgentController : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        // Add agent's position as an observation
         sensor.AddObservation(transform.localPosition);
 
-        // Add relative positions of all targets
         foreach (var target in spawnedTargets)
         {
             sensor.AddObservation(target.transform.localPosition - transform.localPosition);
         }
 
-        // Add total number of remaining pellets
         sensor.AddObservation(spawnedTargets.Count);
 
-        // Add relative position of the hunter
         if (hunterObject != null)
         {
             Vector3 hunterRelativePosition = hunterObject.transform.localPosition - transform.localPosition;
@@ -115,7 +105,7 @@ public class AgentController : Agent
         }
         else
         {
-            sensor.AddObservation(Vector3.zero); // Placeholder for missing hunter
+            sensor.AddObservation(Vector3.zero); 
         }
     }
 
@@ -125,7 +115,6 @@ public class AgentController : Agent
         float moveRotate = actions.ContinuousActions[0];
         float moveForward = actions.ContinuousActions[1];
 
-        // Apply movement and rotation
         rb.MovePosition(transform.position + transform.forward * moveForward * moveSpeed * Time.deltaTime);
         transform.Rotate(0f, moveRotate * moveSpeed, 0f, Space.Self);
     }
@@ -147,7 +136,6 @@ public class AgentController : Agent
 
         if (other.gameObject.CompareTag("target"))
         {
-            // Reward for collecting a target
             AddReward(10f);
 
             spawnedTargets.Remove(other.gameObject);
@@ -163,7 +151,6 @@ public class AgentController : Agent
         }
         else if (other.gameObject.CompareTag("wall"))
         {
-            // Penalize for hitting a wall
             AddReward(-50f);
 
             RemovePellets();
